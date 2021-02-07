@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
+}
+:root{
+    --color-black-primary: #252525;
+    --color-black-secondary: #2b2b2b;
+    --color-gray: #707070;
+    --color-white: #ffffff;
+    --color-red-primary: #dc3545;
+    --color-red-secondary: #bb2d3b;
+    --color-yellow-primary: #ffc107;
+    --color-yellow-secondary: #ffca2c;
+    --color-skyblue-primary: #10bce3;
+    --color-skyblue-seconday: #31d2f2;
+    --color-blue: #2469a0;
+    --color-lightgreen: #8be27e;
+    --color-navygreen: #3dd6af;
+    --color-skyblue: #10BCE3;
+}
+/* @font-face{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"');
+} */
+html{
+    font-size: 62.5%;
+}
+body { height: 100%; background-color: #252525;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
