@@ -6,7 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // Directives
 
 // Components
-import { HeaderComponent } from './components/header/header/header.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 // Design
