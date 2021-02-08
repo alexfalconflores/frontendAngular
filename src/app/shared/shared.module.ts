@@ -6,6 +6,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // Directives
 
 // Components
+import { HeaderComponent } from './components/header/header/header.component';
+
 
 // Design
 import { MaterialModule } from '@material/material.module';
@@ -21,6 +23,7 @@ import { SafeUrlPipe } from './pipes/SafeUrl/SafeUrl.pipe';
         // Directives
 
         // Components
+        HeaderComponent,
     ],
     exports: [
         // Pipes
@@ -29,7 +32,7 @@ import { SafeUrlPipe } from './pipes/SafeUrl/SafeUrl.pipe';
         // Directives
 
         // Components
-
+        HeaderComponent,
         // Modules
         FormsModule,
         RouterModule,

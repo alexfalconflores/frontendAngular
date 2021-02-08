@@ -12,9 +12,11 @@ import { CoreModule } from '@core/core.module';
 
 
 import { environment } from 'src/environments/environment.prod';
+import { LayoutComponent } from './layout/layout.component';
+
 
 @NgModule({
-    declarations: [AppComponent],
+    declarations: [AppComponent, LayoutComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,
