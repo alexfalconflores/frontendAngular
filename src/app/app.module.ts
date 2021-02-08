@@ -7,7 +7,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { SharedModule } from './shared/shared.module';
+import { SharedModule } from '@shared/shared.module';
+import { CoreModule } from '@core/core.module';
+
 
 import { environment } from 'src/environments/environment.prod';
 
@@ -18,6 +20,7 @@ import { environment } from 'src/environments/environment.prod';
         AppRoutingModule,
         FormsModule,
         SharedModule,
+        CoreModule,
         HttpClientModule,
         BrowserAnimationsModule,
     ],
