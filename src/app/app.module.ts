@@ -10,7 +10,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from '@shared/shared.module';
 import { CoreModule } from '@core/core.module';
 
-
 import { environment } from 'src/environments/environment.prod';
 import { LayoutComponent } from './layout/layout.component';
 

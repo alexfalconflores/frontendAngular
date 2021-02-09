@@ -1,0 +1,14 @@
+.container-titulo{
+    display: inline-block;
+}
+.container-titulo >h1{
+    width: 100%;
+    font-size: 7rem;
+    color: var(--color-white);
+}
+.container-titulo >h2{
+    width: 100%;
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--color-white);
+}

@@ -10,23 +10,29 @@ const routes: Routes = [
     },
     {
         path: 'login',
-        loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
+        loadChildren: () =>
+            import('./auth/auth.module').then((m) => m.AuthModule),
     },
     {
         path: 'admin',
-        component: LayoutComponent,
+        loadChildren: () =>
+            import('./admin/admin.module').then((m) => m.AdminModule),
     },
     {
         path: '**',
         loadChildren: () =>
-        import('./page-not-found/page-not-found.module').then((m) => m.PageNotFoundRoutingModule),
-    }
+            import('./page-not-found/page-not-found.module').then(
+                (m) => m.PageNotFoundRoutingModule
+            ),
+    },
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes, {
-        preloadingStrategy: PreloadAllModules,
-    })],
+    imports: [
+        RouterModule.forRoot(routes, {
+            preloadingStrategy: PreloadAllModules,
+        }),
+    ],
     exports: [RouterModule],
 })
 export class AppRoutingModule {}
