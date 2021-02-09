@@ -1,0 +1,95 @@
+.option-payment{
+    display: inline-block;
+    overflow-x: scroll;
+    width: 100%;
+    padding: 3rem;
+    position: relative;
+}
+.option-payment__container{
+    white-space: nowrap;
+    margin: 1rem 0rem;
+    padding-bottom: 1rem;
+}
+.pagos-card{
+    width: 19.4rem;
+    height: 12rem;
+    margin-right: 2rem;
+    display: inline-block;
+    transition: 450ms all;
+    -webkit-transition-origin: center left;
+    transform-origin: center left;
+    background-color: var(--color-gray);
+    border-radius: 1rem;
+    padding: 1.2rem;
+    position: relative;
+    overflow: hidden;
+}
+.pagos-card:hover~.pagos-card{
+    -webkit-transform: translate3d(10rem,0rem,0rem);
+    transform: translate3d(2rem,0rem,0rem);
+}
+
+.option-payment__container:hover .pagos-card{
+    opacity: 0.3;
+}
+.option-payment__container:hover .pagos-card:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.pagos-card:last-child{
+    margin-right: 0rem;
+}
+
+.up-card{
+    display: flex;
+    justify-content: space-between;
+    height:50%;
+}
+.logo-card{
+    display: flex;
+    width: 3rem;
+    height: 2rem;
+}
+.cicle1{
+    fill: var(--color-red-primary);
+}
+.cicle2{
+    fill: var(--color-yellow-primary);
+}
+.cicle3{
+    fill: var(--color-navygreen);
+}
+.logo-cash{
+    fill: var(--color-white);
+}
+.icon{
+    display: flex;
+}
+.icon .edit a > i{
+    color: var(--color-white);
+    font-size: 1.6rem;
+    width:2.3rem;
+    height: 2.3rem;
+}
+.down-card{
+    display: flex;
+    height: 50%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.down-card > h1{
+    display: inline-block;
+    color: var(--color-white);
+}
+
+.down-card > h1:first-child{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.down-card > h1:last-child{
+    font-size: 1.6;
+    font-weight: 400;
+}

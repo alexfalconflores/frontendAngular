@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import * as moment from 'moment';
 
 
 @Component({
@@ -10,7 +11,7 @@ export class TituloPaginaComponent implements OnInit {
 
     @Input() titulo: string;
 
-    @Input() fechaActual: any ;
+    hoy: any = moment().format('LL');
 
     constructor() {
         // let now = moment();

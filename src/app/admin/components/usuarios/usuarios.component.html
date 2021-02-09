@@ -1,12 +1,26 @@
 <div class="container">
-    <div>
+    <div class="arriba">
         <app-titulo-pagina
             titulo="{{ titulo }}"
-            fechaActual="{{ hoy }}"
         ></app-titulo-pagina>
+        <section class="main">
+            <form class="search">
+                <input class="input" type="text" placeholder="Buscar..." />
+                <div>
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+            <button type="button" class="btn">
+                <i class="fas fa-plus"></i>
+                Nuevo Usuario
+            </button>
+        </section>
     </div>
     <div>
         <app-rol></app-rol>
     </div>
-
+    <h2>Usuarios</h2>
+    <app-usuario></app-usuario>
 </div>

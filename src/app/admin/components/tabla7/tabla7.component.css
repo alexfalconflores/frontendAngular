@@ -1,0 +1,88 @@
+.content {
+    margin: 2rem 0rem 0rem 0rem;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    background-color: var(--color-black-secondary);
+    padding: 2rem 1rem;
+}
+table {
+    width: 100%;
+    background-color: var(--color-black-secondary);
+    border: none;
+    font-weight: 400;
+    font-size: 2rem;
+}
+thead tr th{
+    text-align:left;
+    color: var(--color-gray);
+    padding: 0rem 2rem;
+    font-weight: 400;
+}
+table tbody tr  {
+    width: 100%;
+    border-radius: .5rem;
+    font-weight: 400;
+}
+
+table tbody tr:hover {
+    background-color:var(--color-gray);
+    border-radius: .5rem;
+}
+
+
+table tbody tr td {
+    padding: .5rem 2rem;
+    margin: 0rem;
+    border: none;
+    margin: .5rem 0rem;
+    font-weight: 400;
+}
+table tbody tr td:last-child {
+    -webkit-border-top-right-radius: 1rem;
+    -webkit-border-bottom-right-radius: 1rem;
+    -moz-border-radius-topright: 1rem;
+    -moz-border-radius-bottomright: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+table tbody tr td:first-child {
+    -webkit-border-top-left-radius: 1rem;
+    -webkit-border-bottom-left-radius: 1rem;
+    -moz-border-radius-topleft: 1rem;
+    -moz-border-radius-bottomleft: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+table tbody tr td .icon{
+    display: flex;
+    justify-content: space-evenly;
+}
+table tbody tr td .icon .edit{
+    display: flex;
+    background-color: var(--color-yellow-primary);
+    width:3.4rem;
+    height: 3.4rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 2rem; */
+}
+table tbody tr td .icon .edit a>i{
+    color: var(--color-white);
+}
+
+table tbody tr td .icon .disabled{
+    display: flex;
+    background-color:var(--color-red-primary);
+    width: 3.4rem;
+    height: 3.4rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+table tbody tr td .icon .disabled a>i{
+    color: var(--color-white);
+}

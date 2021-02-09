@@ -47,4 +47,8 @@ export class HeaderComponent implements OnInit {
         this.six.nativeElement.style.display = 'none';
         this.seven.nativeElement.style.display = 'none';
     }
+
+    logout(){
+
+    }
 }

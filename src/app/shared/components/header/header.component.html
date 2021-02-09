@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="acciones">
-            <button class="menu-boton font-weight">
+            <button class="menu-boton font-weight" routerLink="./almacen">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="50.086"
@@ -44,7 +44,7 @@
                 </svg>
                 <div #two id="two">Almacen</div>
             </button>
-            <button class="menu-boton font-weight">
+            <button class="menu-boton font-weight" routerLink="./ingresos">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="49.919"
@@ -73,7 +73,7 @@
                 </svg>
                 <div #three id="three">Ingresos</div>
             </button>
-            <button class="menu-boton font-weight">
+            <button class="menu-boton font-weight" routerLink="./ventas">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="49.919"
@@ -102,7 +102,7 @@
                 </svg>
                 <div #four id="four">Ventas</div>
             </button>
-            <button class="menu-boton font-weight">
+            <button class="menu-boton font-weight" routerLink="./caja">
                 <svg
                     id="cajero_2_"
                     data-name="cajero (2)"
@@ -122,7 +122,7 @@
                 </svg>
                 <div #five id="five">Caja</div>
             </button>
-            <button class="menu-boton font-weight">
+            <button class="menu-boton font-weight" routerLink="./usuario">
                 <svg
                     id="usuario_1_"
                     data-name="usuario (1)"
@@ -144,7 +144,7 @@
             </button>
         </div>
         <div class="close-login">
-            <button class="menu-boton font-weight">
+            <button class="menu-boton font-weight" (click)="logout()">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="49.919"

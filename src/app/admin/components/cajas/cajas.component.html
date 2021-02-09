@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="arriba">
+        <app-titulo-pagina titulo="{{ titulo }}">
+        </app-titulo-pagina>
+        <section class="main">
+            <form class="search">
+                <input class="input" type="text" placeholder="Buscar..." />
+                <div>
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+            <button type="button" class="btn">
+                <i class="fas fa-plus"></i>
+                Nuevo Tipo Pago
+            </button>
+        </section>
+    </div>
+    <div>
+        <app-metodoPago></app-metodoPago>
+    </div>
+    <div class="arriba">
+        <h2>Usuarios</h2>
+        <section class="main">
+            <form class="search">
+                <input class="input" type="text" placeholder="Buscar..." />
+                <div>
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+            <button type="button" class="btn">
+                <i class="fas fa-plus"></i>
+                Nuevo Pago
+            </button>
+        </section>
+    </div>
+    <app-tabla7></app-tabla7>
+</div>

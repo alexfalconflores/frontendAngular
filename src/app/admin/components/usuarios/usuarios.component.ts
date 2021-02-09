@@ -7,8 +7,8 @@ import * as moment from 'moment';
     styleUrls: ['./usuarios.component.css'],
 })
 export class UsuariosComponent implements OnInit {
-    titulo: string = 'usuarios';
-    hoy: any = moment().format('LL');
+    titulo: string = 'Usuarios';
+    // hoy: any = moment().format('LL');
 
     constructor() {
         // let now = moment();
