@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
     box-sizing: border-box;
     margin: 0rem;
     padding: 0rem;
 }
-:root{
+:root {
     --color-black-primary: #252525;
     --color-black-secondary: #2b2b2b;
     --color-gray: #707070;
@@ -18,12 +18,12 @@
     --color-blue: #2469a0;
     --color-lightgreen: #8be27e;
     --color-navygreen: #3dd6af;
-    --color-skyblue: #10BCE3;
+    --color-skyblue: #10bce3;
 
     --color-scroll: #252525;
     --color-scrollbar: #707070;
-    --color-scrollbar-rgba: rgba(112,112,112,.4);
-    --color-scrollbar-hover:#2b2b2b;
+    --color-scrollbar-rgba: rgba(112, 112, 112, 0.4);
+    --color-scrollbar-hover: #2b2b2b;
 }
 /* @font-face{
     font-family: 'Roboto';
@@ -31,16 +31,25 @@
     font-weight: 400;
     src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"');
 } */
-html{
+html {
     font-size: 62.5%;
 }
-body { height: 100%; background-color: #252525; color: var(--color-white)}
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* body { height: 100%; background-color: #252525; color: var(--color-white)} */
+/* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    height: 100%;
+    background-color: #252525;
+    color: var(--color-white);
+}
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: var(--color-scrollbar);
     border-radius: 5px;
 }
@@ -51,7 +60,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     border-radius: 5px;
 }
 ::-webkit-scrollbar:hover {
-    background:var(--color-scrollbar-hover);
+    background: var(--color-scrollbar-hover);
 }
 ::-webkit-scrollbar:hover:active {
     background: var(--color-scroll);

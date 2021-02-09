@@ -4,15 +4,17 @@
     height: 47.7rem;
     border-radius: 1rem;
     background-color: var(--color-black-secondary);
+    padding-top: 3rem;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 2rem;
     overflow-y: scroll;
 }
-.content .header__content{
+.header__content{
     display: flex;
+    flex-direction: row;
     width: 100%;
-    background-color: var(--color-black-secondary);
+    /* background-color: #2B2B2B; */
     justify-content: space-between;
     padding: 3rem;
     /* padding-left: 3rem;
@@ -22,6 +24,7 @@
     position: sticky;
     top: 0rem;
 }
+
 .main{
     display: inline-flex;
     align-items: center;
@@ -37,7 +40,7 @@
 }
 .search >.input{
     display: inline-block;
-    background-color: var(--color-black-primary);
+    background-color: var(--color-black-secondary);
     outline: none;
     border: none;
     border-top-left-radius: 1rem;
@@ -55,7 +58,7 @@
     border-top-right-radius: 1rem;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    background-color: var(--color-black-primary);
+    background-color: var(--color-black-secondary);
     height: 3.7rem;
 }
 .search div button{
@@ -80,7 +83,6 @@
     color: var(--color-white);
     font-size: 2rem;
     background-color: var(--color-skyblue-primary);
-    cursor: pointer;
 }
 .btn:hover{
     background-color: var(--color-skyblue-seconday);
@@ -89,6 +91,7 @@
 .btn >.fas{
     padding-right: 1rem;
 }
+
 
 table {
     width: 100%;
@@ -144,9 +147,9 @@ table tbody tr td .icon{
     display: flex;
     justify-content: space-evenly;
 }
-table tbody tr td .icon .edit{
+table tbody tr td .icon .details{
     display: flex;
-    background-color: var(--color-yellow-primary);
+    background-color: var(--color-skyblue-primary);
     width:3.4rem;
     height: 3.4rem;
     border-radius: 50%;
@@ -154,7 +157,7 @@ table tbody tr td .icon .edit{
     align-items: center;
     /* margin-right: 2rem; */
 }
-table tbody tr td .icon .edit a>i{
+table tbody tr td .icon .details a>i{
     color: var(--color-white);
 }
 

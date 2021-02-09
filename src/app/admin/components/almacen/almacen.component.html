@@ -1,3 +1,41 @@
-<p>
-  almacen works!
-</p>
+<div class="container">
+    <app-titulo-pagina
+        titulo="{{ titulo }}"
+    ></app-titulo-pagina>
+    <div class="arriba">
+        <h2>Categorías</h2>
+        <section class="main">
+            <form class="search">
+                <input class="input" type="text" placeholder="Buscar..." />
+                <div>
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+            <button type="button" class="btn">
+                <i class="fas fa-plus"></i>
+                Nueva Categoría
+            </button>
+        </section>
+    </div>
+    <app-categorias></app-categorias>
+    <div class="arriba">
+        <h2>Artículos</h2>
+        <section class="main">
+            <form class="search">
+                <input class="input" type="text" placeholder="Buscar..." />
+                <div>
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+            <button type="button" class="btn">
+                <i class="fas fa-plus"></i>
+                Nuevo Artículo
+            </button>
+        </section>
+    </div>
+    <app-articulos></app-articulos>
+</div>

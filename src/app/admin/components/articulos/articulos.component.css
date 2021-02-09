@@ -1,0 +1,101 @@
+.articulos{
+    width: 100%;
+    /* height: ; */
+    /* padding: 1rem; */
+    position: relative;
+    /* overflow-y: scroll; */
+}
+.articulos__container{
+    display: flexbox;
+    width: 100%;
+    margin: 1rem 0rem;
+    justify-content: center;
+}
+.articulos__container--items{
+    display: inline-block;
+    width: 43.9rem;
+    height: max-content;
+    margin-right: 3rem;
+    transition: 450ms all;
+    transform-origin: center left;
+    position: relative;
+}
+.articulos__container:hover .articulos__container--items{
+    opacity: 0.5;
+}
+.articulos__container:hover .articulos__container--items:hover{
+    transform: scale(1.04);
+    opacity: 1;
+}
+.item{
+    display: flex;
+    margin: 2rem;
+    width: 43.9rem;
+    /* height: 23.8rem; */
+    height: max-content;
+    background-color: var(--color-black-secondary);
+    border-radius: 1rem;
+    padding: 0rem 0rem 0rem 0rem;
+}
+.ladoa{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 1rem 1rem;
+}
+.ladoa img{
+    width: 13.3rem;
+    height: 17.1rem;
+    border-radius: .5rem;
+}
+.ladoa .icons{
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    height: max-content;
+    justify-content: space-around;
+    align-items: center;
+}
+.ladoa .icons .edit > a{
+    font-size: .8rem;
+    color: var(--color-yellow-primary);
+}
+.ladoa .icons .disabled > a{
+    color: var(--color-red-primary);
+}
+/* .ladoa .icons .info a{
+    color: #FFC107;
+} */
+.ladob{
+    display: flex;
+    flex-direction: column;
+    width: 27.55rem;
+    padding: 1rem 1rem 1rem 1rem;
+}
+.ladob div > h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-gray);
+    margin-bottom: 0rem;
+}
+.ladob div > h1{
+    display: flex;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-white);
+    white-space: normal !important;
+    word-break: break-all;
+    margin-bottom: 0rem;
+}
+
+.estado{
+    display: flex;
+    width: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.active{
+    background-color: var(--color-navygreen);
+}
+.inactive{
+    background-color: var(--color-red-primary);
+}

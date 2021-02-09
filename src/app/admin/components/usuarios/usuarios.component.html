@@ -1,8 +1,15 @@
 <div class="container">
+    <app-titulo-pagina
+        titulo="{{ titulo }}"
+    ></app-titulo-pagina>
     <div class="arriba">
-        <app-titulo-pagina
-            titulo="{{ titulo }}"
-        ></app-titulo-pagina>
+        <h2>Roles</h2>
+    </div>
+    <div>
+        <app-rol></app-rol>
+    </div>
+    <div class="arriba">
+        <h2>Usuarios</h2>
         <section class="main">
             <form class="search">
                 <input class="input" type="text" placeholder="Buscar..." />
@@ -18,9 +25,6 @@
             </button>
         </section>
     </div>
-    <div>
-        <app-rol></app-rol>
-    </div>
-    <h2>Usuarios</h2>
+    <div class="separador"></div>
     <app-usuario></app-usuario>
 </div>

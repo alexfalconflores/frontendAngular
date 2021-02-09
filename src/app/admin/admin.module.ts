@@ -17,6 +17,10 @@ import { Tabla7Component } from './components/tabla7/tabla7.component';
 import { EstadisticasComponent } from './components/estadisticas/estadisticas.component';
 import { Tabla9Component } from './components/tabla9/tabla9.component';
 import { Tabla10VentasComponent } from './components/tabla10Ventas/tabla10Ventas.component';
+import { Tabla10ComprasComponent } from './components/tabla10Compras/tabla10Compras.component';
+import { ProveedoresComponent } from './components/proveedores/proveedores.component';
+import { CategoriasComponent } from './components/categorias/categorias.component';
+import { ArticulosComponent } from './components/articulos/articulos.component';
 
 
 
@@ -35,6 +39,10 @@ import { Tabla10VentasComponent } from './components/tabla10Ventas/tabla10Ventas
         EstadisticasComponent,
         Tabla9Component,
         Tabla10VentasComponent,
+        Tabla10ComprasComponent,
+        ProveedoresComponent,
+        CategoriasComponent,
+        ArticulosComponent,
     ],
     imports: [CommonModule, AdminRoutingModule, SharedModule, MaterialModule],
 })

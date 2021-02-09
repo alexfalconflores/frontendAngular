@@ -2,7 +2,7 @@
     width: 100%;
     display: inline-block;
     position: relative;
-    /* overflow-x: scroll; */
+    overflow-x: scroll;
     padding: 3rem 0rem;
 }
 .subcontainer-roles{
