@@ -12,6 +12,8 @@ import { RolService } from './services/rol/rol.service';
 import { TipoPagoService } from './services/tipoPago/tipoPago.service';
 import { UsuarioService } from './services/usuario/usuario.service';
 import { VentaService } from './services/venta/venta.service';
+import { NotifierService } from './services/notifier/notifier.service';
+
 
 @NgModule({
     declarations: [],
@@ -29,6 +31,7 @@ import { VentaService } from './services/venta/venta.service';
         TipoPagoService,
         UsuarioService,
         VentaService,
+        NotifierService,
     ],
 })
 export class CoreModule {}

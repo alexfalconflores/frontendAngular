@@ -12,7 +12,11 @@ import { CoreModule } from '@core/core.module';
 
 import { environment } from 'src/environments/environment.prod';
 import { LayoutComponent } from './layout/layout.component';
-
+import {
+    MatSnackBarRef,
+    MAT_SNACK_BAR_DATA,
+} from '@angular/material/snack-bar';
+// import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
 
 @NgModule({
     declarations: [AppComponent, LayoutComponent],
@@ -20,12 +24,25 @@ import { LayoutComponent } from './layout/layout.component';
         BrowserModule,
         AppRoutingModule,
         FormsModule,
-        SharedModule,
         CoreModule,
+        SharedModule,
         HttpClientModule,
         BrowserAnimationsModule,
     ],
-    providers: [],
+    providers: [
+        {
+            provide: MatSnackBarRef,
+            useValue: {},
+        },
+        {
+            provide: MAT_SNACK_BAR_DATA,
+            useValue: {},
+        },
+        // {
+        //     provide: MAT_SNACK_BAR_DEFAULT_OPTIONS,
+        //     useValue: { duration: 2500 },
+        // },
+    ],
     bootstrap: [AppComponent],
 })
 export class AppModule {}

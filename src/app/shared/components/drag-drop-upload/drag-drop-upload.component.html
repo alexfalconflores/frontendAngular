@@ -1,0 +1,24 @@
+<div class="containerDragDrop">
+    <div
+        class="uploadfilecontainer"
+        (click)="fileInput.click()"
+        appDragDropUpload
+        (onFileDropped)="uploadFileDragDrop($event)"
+    >
+        <img
+            *ngIf="image$ | SafeUrl as image"
+            [src]="image"
+            alt="{{ name$ }}"
+        />
+        <h1 class="aviso" *ngIf="image$ === ''">
+            Arrastre y suelte la imagen o haga click para cargar
+        </h1>
+        <input
+            hidden
+            type="file"
+            #fileInput
+            (change)="uploadFileClick($event)"
+        />
+    </div>
+    <h1 class="nombre">{{ name$ }}</h1>
+</div>

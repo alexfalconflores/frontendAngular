@@ -65,3 +65,9 @@ body {
 ::-webkit-scrollbar:hover:active {
     background: var(--color-scroll);
 }
+
+.mat-snack-bar-container{
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}

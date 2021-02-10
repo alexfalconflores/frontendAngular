@@ -21,6 +21,7 @@ import { Tabla10ComprasComponent } from './components/tabla10Compras/tabla10Comp
 import { ProveedoresComponent } from './components/proveedores/proveedores.component';
 import { CategoriasComponent } from './components/categorias/categorias.component';
 import { ArticulosComponent } from './components/articulos/articulos.component';
+import { UsuarioNuevoComponent } from './components/usuario-nuevo/usuario-nuevo.component';
 
 
 
@@ -43,6 +44,7 @@ import { ArticulosComponent } from './components/articulos/articulos.component';
         ProveedoresComponent,
         CategoriasComponent,
         ArticulosComponent,
+        UsuarioNuevoComponent,
     ],
     imports: [CommonModule, AdminRoutingModule, SharedModule, MaterialModule],
 })

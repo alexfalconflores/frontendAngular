@@ -20,6 +20,8 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatStepperModule } from '@angular/material/stepper';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
     declarations: [],
@@ -44,6 +46,8 @@ import { MatStepperModule } from '@angular/material/stepper';
         MatButtonToggleModule,
         MatFormFieldModule,
         MatStepperModule,
+        MatProgressBarModule,
+        MatSnackBarModule,
     ],
     exports: [
         MatButtonModule,
@@ -65,6 +69,8 @@ import { MatStepperModule } from '@angular/material/stepper';
         MatButtonToggleModule,
         MatFormFieldModule,
         MatStepperModule,
+        MatProgressBarModule,
+        MatSnackBarModule,
     ],
 })
 export class MaterialModule {}

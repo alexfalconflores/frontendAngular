@@ -41,13 +41,13 @@
 }
 .data-user>h1{
     font-size: 2rem;
-    color: #ffffff;
+    color: var(--color-white);
     display: block;
     margin: 0rem;
 }
 .data-user>h2{
     font-size: 1.2rem;
-    color: #707070;
+    color: var(--color-gray);
     display: block;
     margin: 0rem;
 }
@@ -66,7 +66,7 @@
     padding: 3rem;
 }
 .menu-boton{
-    color: white;
+    color: var(--color-white);
     border: none;
     background-color: transparent;
     display: flex;
@@ -79,7 +79,7 @@
 }
 
 .menu-boton:active{
-    color: #707070;
+    color: var(--color-gray);
 }
 .menu-boton > div{
     display: none;
