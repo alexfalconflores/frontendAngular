@@ -22,6 +22,10 @@ import { ProveedoresComponent } from './components/proveedores/proveedores.compo
 import { CategoriasComponent } from './components/categorias/categorias.component';
 import { ArticulosComponent } from './components/articulos/articulos.component';
 import { UsuarioNuevoComponent } from './components/usuario-nuevo/usuario-nuevo.component';
+import { UsuarioEditarComponent } from './components/usuario-editar/usuario-editar.component';
+import { UsuarioDetalleComponent } from './components/usuario-detalle/usuario-detalle.component';
+
+
 
 
 
@@ -45,6 +49,8 @@ import { UsuarioNuevoComponent } from './components/usuario-nuevo/usuario-nuevo.
         CategoriasComponent,
         ArticulosComponent,
         UsuarioNuevoComponent,
+        UsuarioEditarComponent,
+        UsuarioDetalleComponent,
     ],
     imports: [CommonModule, AdminRoutingModule, SharedModule, MaterialModule],
 })

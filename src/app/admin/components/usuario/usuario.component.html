@@ -24,7 +24,51 @@
                     </div>
                     <div class="icons">
                         <div class="icon">
-                            <div class="edit">
+                            <div class="edit" >
+                                <a routerLink="./editar"><i class="fas fa-pen fa-3x"></i></a>
+                                <!-- [routerLink]="['./editar']" -->
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <div class="disabled">
+                                <a href="#"><i class="fas fa-times fa-3x"></i></a>
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <div class="info">
+                                <a routerLink="./detalle"><i class="fas fa-info fa-3x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="active-bar enabled-bar"></div>
+            </div>
+        </div>
+        <div class="usuario-item">
+            <div class="item">
+                <div class="imagen">
+                    <figure>
+                        <img src="assets/image/user.png" alt="Usuario">
+                    </figure>
+                </div>
+                <div class="info">
+                    <div class="name">
+                        <h1>Laurel Boyd</h1>
+                        <h2>Laurel.Boyd@mail.com</h2>
+                    </div>
+                    <div class="box">
+                        <div class="role">
+                            <h2>Rol</h2>
+                            <h1>Administrador</h1>
+                        </div>
+                        <div class="document">
+                            <h2>DNI</h2>
+                            <h1>55462118</h1>
+                        </div>
+                    </div>
+                    <div class="icons">
+                        <div class="icon">
+                            <div class="edit" [routerLink]="['./editar']">
                                 <a href="#"><i class="fas fa-pen fa-3x"></i></a>
                             </div>
                         </div>
@@ -67,7 +111,7 @@
                     </div>
                     <div class="icons">
                         <div class="icon">
-                            <div class="edit">
+                            <div class="edit" [routerLink]="['./editar']">
                                 <a href="#"><i class="fas fa-pen fa-3x"></i></a>
                             </div>
                         </div>
@@ -110,7 +154,7 @@
                     </div>
                     <div class="icons">
                         <div class="icon">
-                            <div class="edit">
+                            <div class="edit" [routerLink]="['./editar']">
                                 <a href="#"><i class="fas fa-pen fa-3x"></i></a>
                             </div>
                         </div>
@@ -153,50 +197,7 @@
                     </div>
                     <div class="icons">
                         <div class="icon">
-                            <div class="edit">
-                                <a href="#"><i class="fas fa-pen fa-3x"></i></a>
-                            </div>
-                        </div>
-                        <div class="icon">
-                            <div class="disabled">
-                                <a href="#"><i class="fas fa-times fa-3x"></i></a>
-                            </div>
-                        </div>
-                        <div class="icon">
-                            <div class="info">
-                                <a href="#"><i class="fas fa-info fa-3x"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="active-bar enabled-bar"></div>
-            </div>
-        </div>
-        <div class="usuario-item">
-            <div class="item">
-                <div class="imagen">
-                    <figure>
-                        <img src="assets/image/user.png" alt="Usuario">
-                    </figure>
-                </div>
-                <div class="info">
-                    <div class="name">
-                        <h1>Laurel Boyd</h1>
-                        <h2>Laurel.Boyd@mail.com</h2>
-                    </div>
-                    <div class="box">
-                        <div class="role">
-                            <h2>Rol</h2>
-                            <h1>Administrador</h1>
-                        </div>
-                        <div class="document">
-                            <h2>DNI</h2>
-                            <h1>55462118</h1>
-                        </div>
-                    </div>
-                    <div class="icons">
-                        <div class="icon">
-                            <div class="edit">
+                            <div class="edit" [routerLink]="['/editar']">
                                 <a href="#"><i class="fas fa-pen fa-3x"></i></a>
                             </div>
                         </div>

@@ -1,20 +1,13 @@
-import {
-    Component,
-    OnInit,
-    AfterContentInit,
-    ViewChild,
-    ElementRef,
-    HostListener,
-} from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { NotifierService } from '@core/services/notifier/notifier.service';
 
 @Component({
-    selector: 'app-usuario-nuevo',
-    templateUrl: './usuario-nuevo.component.html',
-    styleUrls: ['./usuario-nuevo.component.css'],
+    selector: 'app-usuario-editar',
+    templateUrl: './usuario-editar.component.html',
+    styleUrls: ['./usuario-editar.component.css'],
 })
-export class UsuarioNuevoComponent implements OnInit {
+export class UsuarioEditarComponent implements OnInit {
     @ViewChild('fileInput') fileInput: ElementRef;
     files: any = [];
     image$: string = '';
@@ -23,11 +16,9 @@ export class UsuarioNuevoComponent implements OnInit {
     constructor(
         private notifierService: NotifierService,
         private router: Router
-    ) {
-        fileInput: ElementRef;
-    }
+    ) {}
 
-    ngOnInit(): void {}
+    ngOnInit() {}
 
     uploadFileDragDrop(event) {
         // tslint:disable-next-line: prefer-for-of
@@ -85,12 +76,14 @@ export class UsuarioNuevoComponent implements OnInit {
                 );
             }
         } else {
-            this.notifierService.showNotificationDanger('Formato no valido');
+            this.notifierService.showNotificationDanger(
+                'Formato no valido'
+            );
         }
     }
 
-    crear() {
-        this.notifierService.showNotificationSuccess('Usuario Creado');
+    editar(){
+        this.notifierService.showNotificationWarning('Usuario Editado');
     }
 
     cerrar() {

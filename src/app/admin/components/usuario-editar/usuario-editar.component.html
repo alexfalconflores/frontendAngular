@@ -1,15 +1,15 @@
 <div class="container" id="box-formulario">
     <div class="box-formulario">
-        <form action="" method="post">
+        <form action="" method="post" autocomplete="off">
             <h1 class="titulos">Personal</h1>
             <hr>
             <label for="nombre">
                 <span>Nombres</span>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="off">
             </label>
             <label for="apellido">
                 <span>Apellidos</span>
-                <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required>
+                <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required autocomplete="off">
             </label>
             <span>Tipo Documento</span>
             <div class="btn-group">
@@ -23,18 +23,21 @@
             <div class="documento-telefono-container">
                 <label for="numero-documento">
                     <span>Número Documento</span>
-                    <input type="number" id="numero-documento" name="numero-documento" placeholder="Numero Documento" min="0" required>
+                    <input type="number" id="numero-documento" name="numero-documento" placeholder="Numero Documento" min="0" required autocomplete="off">
                 </label>
                 <label for="telefono">
                     <span>Telefono</span>
-                    <input type="tel" id="telefono" name="telefono" placeholder="Telefono" required>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Telefono" required autocomplete="off">
                 </label>
             </div>
             <label for="direccion">
                 <span>Dirección</span>
-                <input type="text" id="direccion" name="direccion" placeholder="Tu direccion" required>
+                <input type="text" id="direccion" name="direccion" placeholder="Tu direccion" required autocomplete="off">
             </label>
             <span>Imagen</span>
+            <div class="imagen-usuario-contenedor">
+                <img class="imagen-usuario" src="../../../../assets/image/user.png" alt="usuario">
+            </div>
             <div class="containerDragDrop">
                 <div
                     class="uploadfilecontainer"
@@ -59,6 +62,7 @@
                 </div>
                 <h1 class="nombre">{{ name$ }}</h1>
             </div>
+
             <h1 class="titulos">Cuenta</h1>
             <hr>
             <span>Rol</span>
@@ -72,15 +76,14 @@
             </div>
             <label for="email">
                 <span>Email</span>
-                <input type="email" id="email" name="email" placeholder="Tu email" required>
+                <input type="email" id="email" name="email" placeholder="Tu email" required autocomplete="off">
             </label>
             <label for="password">
                 <span>Contraseña</span>
-                <input type="password" id="password" name="password" placeholder="Tu Contraseña" required>
+                <input type="password" id="password" name="password" placeholder="Tu Contraseña" required autocomplete="off">
             </label>
-            <input type="submit" value="Insertar" (click)="crear()">
-            <!-- <a href="#" class="btn-close-popup" id="btn-close-popup">Cancelar</a> -->
-            <input type="reset" class="btn-close-popup" id="btn-close-popup" value="Cancelar" (click)="cerrar()">
+            <input type="submit" value="Guardar" (click)="editar()">
+            <input type="reset" class="btn-close-popup" id="btn-close-popup" value="Cancelar"  (click)="cerrar()">
         </form>
     </div>
 </div>
